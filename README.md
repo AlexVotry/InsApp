@@ -17,4 +17,8 @@ This is a quarter 2 full-stack group project for Galvanize.  The app adds/edits/
   + KnexJS as a query builder
 + oAuth with Passport
 
-![homepage](https://github.com/AlexVotry/InsApp/master/public/images/homepage.png "Home page")
+![homepage](https://github.com/AlexVotry/InsApp/blob/master/public/images/homepage.png "Home page")
+
+![add patient](https://github.com/AlexVotry/InsApp/blob/master/public/images/add_patient.png "add patient")
+
+![chart](https://github.com/AlexVotry/InsApp/blob/master/public/images/chart.png "chart")
