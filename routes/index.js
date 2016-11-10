@@ -8,5 +8,10 @@ router.get('/', (req, res, next)=> {
   res.render('index');
 });
 
+router.get('/logout', (req, res, next) => {
+  req.user = null;
+  res.redirect('/');
+});
+
 
 module.exports = router;

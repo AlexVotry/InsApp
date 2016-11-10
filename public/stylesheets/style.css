@@ -431,3 +431,7 @@ footer{
 .male{
   margin-right: 100px;
 }
+
+.error {
+  color: red;
+}

@@ -10,13 +10,13 @@ block content
         h3 
           a(href='/landing') Home
         h3  
-          a(href='#') Reports
+          a(href='/reports') Reports
         h3
-          a(href='#') Logout 
+          a(href='/logout') Logout 
         div.userInfo
           img(src=user.photo width='60px')
           p #{user.name}
-        
+
     div.graph-container
       h1.graph-title
       div.form-group
@@ -28,7 +28,7 @@ block content
           option.form-control(value='osteoporosis-screening' id='c12_osteoporosis') Osteporosis Screening
           option.form-control(value='diabetes-eyecare' id='c13_betus_eyecare') Diabetes Eye Exams
           option.form-control(value='diabetes-kidneycare' id='c14_betus_kidneycare') Diabetes Kidney Exams
-        h2.table-title 
+        h2.table-title Title
         div.patient-table  
           table.table.table-striped
             thead

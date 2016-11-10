@@ -7,7 +7,7 @@
     var request = $.ajax({
       type: "GET",
       dataType: "json",
-      url: `http://localhost:3000/reports/${endPoint}`
+      url: `https://snp-omt.herokuapp.com/reports/${endPoint}`
     });
 
     request.done(function(data) {

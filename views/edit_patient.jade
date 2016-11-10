@@ -11,7 +11,7 @@ block content
         h3  
           a(href='/reports') Reports
         h3
-          a(href='/') Logout 
+          a(href='/logout') Logout 
         div.userInfo
           img(src=user.photo width='60px')
           p #{user.name}
@@ -39,7 +39,7 @@ block content
               label(for='first') First Name
               input.form-control(type='text' id='first' name='first' value=patient.first)
               .radio-inline
-                input(type='radio', id='male', name='gender' value=patient.gender checked=patient.gender="Male")    
+                input(type='radio', id='male', name='gender' value=patient.gender checked=patient.gender="male")    
                 label(for='gender') Male
               .radio-inline
                 input(type='radio', id='female', name='gender' value=patient.gender checked=patient.gender="Female")    
@@ -51,14 +51,13 @@ block content
               label(for='pcp') Primary Care Provider
               input.form-control(type='text' id='pcp' name='pcp' value=patient.pcp)    
             button.btn.btn-primary(type='button' id='continue-perInfo') Continue  
-        
           .planType.patientFields
             .form-group
               label(for='enroll') Enrollment Date
-              input.form-control(type='date' id='enroll' name='enroll' value=patient.enroll)
+              input.form-control(type='date' id='enroll' name='enroll' value=patient.enrollment placeholder=patient.enrollment)
             .form-group
               label(for='disenroll') Disenrollment Date
-              input.form-control(type='date' id='disenroll' name='disenroll' value=patient.disenroll) 
+              input.form-control(type='date' id='disenroll' name='disenroll' value=patient.disenrollment) 
             button.btn.btn-primary(type='button' id='continue-planInfo') Continue
         
           .healthIssues.patientFields
@@ -76,7 +75,7 @@ block content
               .checkbox    
                 label(for='cancer')
                   input(type="checkbox", id='cancer' class='health'
-                  name="cancer" value=patient.cancer)
+                  name="cancer" value=patient.osteoporosis)
                   |Cancer
               .checkbox
                 label(for='copd')              
