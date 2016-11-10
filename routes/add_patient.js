@@ -40,7 +40,7 @@ router.post('/', (req, res, next)=> {
       c13_betus_eyecare: null,
       c14_betus_kidneycare: null
     }).then(()=> {
-      res.redirect('/landing', { company: "Fortified Health" });
+      res.redirect('/landing');
     })
   });
 });
